@@ -1,0 +1,35 @@
+@mixin list-style {
+	padding: 0;
+	list-style: none;
+	// background-color: aqua;
+}
+nav {
+	background-color: rgba(128, 128, 128, 0.144);
+	width: 80px;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	.logo {
+		height: 50px;
+		width: 50px;
+		border: 1px solid black;
+	}
+	ul.menu {
+		@include list-style;
+		li {
+			margin-top: 20px;
+			cursor: pointer;
+		}
+	}
+	ul.links {
+		@include list-style;
+		li {
+			cursor: pointer;
+		}
+	}
+}

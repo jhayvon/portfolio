@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Navigation from "./Navigation";
+import { motion } from "framer-motion";
+const App = () => {
+	return (
+		<>
+			<Navigation />
+			<div className="main" style={{ marginLeft: "80px" }}>
+				<motion.h1
+					animate={{ x: "30%", y: "40vh" }}
+					transition={{ duration: 1 }}
+					style={{
+						fontSize: "2.5rem",
+						textShadow: "10px 10px 10px rgba(150, 150, 150, 1)",
+					}}
+				>
+					hello i'm jhayvon adelan
+				</motion.h1>
+			</div>
+		</>
+	);
+};
 
 export default App;
