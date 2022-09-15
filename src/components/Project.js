@@ -17,7 +17,11 @@ const Project = ({ name }) => {
 					width: "200px",
 				}}
 			></div>
-			<div className="description">{name}</div>
+			<div className="description">
+				<p style={{ fontWeight: "300", fontSize: "1.2rem", margin: "0" }}>
+					{name}
+				</p>
+			</div>
 		</div>
 	);
 };

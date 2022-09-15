@@ -1,30 +1,27 @@
+import "./App.css";
 import Project from "./components/Project";
-
-// import { motion } from "framer-motion";
 const App = () => {
 	return (
-		<>
-			<div
-				className="intro"
+		<div className="app">
+			<div className="intro">
+				<p>Hello I'm</p>
+				<h1>Jhayvon Adelan</h1>
+				<span>Aspiring web developer!</span>
+				<button>contact me?</button>
+			</div>
+			<h1
 				style={{
-					display: "flex",
-					justifyContent: "center",
-					height: "80vh",
-					alignItems: "center",
-					flexDirection: "column",
+					width: "100%",
+					textAlign: "center",
+					marginBottom: "50px",
+					color: "#ff8552",
 				}}
 			>
-				<p>HELLO I'M</p>
-				<h1>JHAYVON ADELAN</h1>
-			</div>
-			<div className="project">
-				<h1>Projects</h1>
-
-				<Project name="Calculator" />
-				<Project name="Todo list" />
-				<Project name="Turnover calculator" />
-			</div>
-		</>
+				Projects
+			</h1>
+			<Project name="Todo list" />
+			<Project name="Shirahata salon" />
+		</div>
 	);
 };
 
