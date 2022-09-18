@@ -1,5 +1,6 @@
 import "./App.css";
 import Project from "./components/Project";
+import Footer from "./components/Footer";
 const App = () => {
 	return (
 		<div className="app">
@@ -21,6 +22,7 @@ const App = () => {
 			</h1>
 			<Project name="Todo list" />
 			<Project name="Shirahata salon" />
+			<Footer />
 		</div>
 	);
 };
